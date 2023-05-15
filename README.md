@@ -41,12 +41,17 @@ As a manager at an internet retail company, you can use this app as a back end f
 If you want to contribute to this project, you should fork it and do a pull request.
 
 ## Tests
-To run tests, run the following command:
+To run tests, make sure you are in the Develop folder and then run the following commands:
 - mysql -u root -p (enter password when promted) OR mysql -u root (if no password)
 - source db/schema.sql
 - quit
 - npm run seed
 - npm start
+
+NOTE: You will need add a .env file to the root of the app with the following details:
+- DB_NAME='ecommerce_db'
+- DB_USER='root'
+- DB_PW='xxx' (leave blank if you had initially set no password to mySQL)
 
 ## Sources
 - https://github.com/coding-boot-camp/fantastic-umbrella (Starter Code)
