@@ -1,12 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection.js');
 
 class Tag extends Model {}
 
 Tag.init(
   {
-    // define columns
+    // Defining Columns
     id: {
         type: DataTypes.INTEGER, // Set the data type to INTEGER
         allowNull: false, // Disallow NULL values

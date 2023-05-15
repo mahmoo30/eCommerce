@@ -1,12 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 
 Category.init(
   {
-    // define columns
+    // Defining Columns
     id: 
     {
         type: DataTypes.INTEGER, // Set the data type to INTEGER
@@ -14,7 +13,6 @@ Category.init(
         primaryKey: true, // Set as the primary key
         autoIncrement: true, // Automatically increment the value for each new record
     },
-      // Define the 'category_name' column
     category_name: 
     {
         type: DataTypes.STRING, // Set the data type to STRING
