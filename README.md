@@ -15,10 +15,11 @@ The back end for an e-commerce site that takes a working Express.js API and conf
 
 ## 💾 Installation
 To install necessary dependencies (inquirer), run the following command:
-- npm init
-- npm install mysql2
-- npm install sequelize
-- npm install dotenv
+- npm init -y
+- npm i mysql2
+- npm i sequelize
+- npm i dotenv
+- npm i express
 
 ## Usage
 As a manager at an internet retail company, you can use this app as a back end for your e-commerce website that uses the latest technologies so that your company can compete with other e-commerce companies.
@@ -45,7 +46,7 @@ To run tests, make sure you are in the Develop folder and then run the following
 - mysql -u root -p (enter password when promted) OR mysql -u root (if no password)
 - source db/schema.sql
 - quit
-- npm run seed
+- node seeds/index.js
 - npm start
 
 NOTE: You will need add a .env file to the root of the app with the following details:
